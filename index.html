@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div>
+      <nav>
+        <div class="upper-navbar">
+          <div class="upper-navbar-left">
+            <a href="" class="link">About us</a>
+            <a href="" class="link">Privacy</a>
+            <a href="" class="link">FAQ</a>
+            <a href="" class="link">Careers</a>
+          </div>
+          <div class="upper-navbar-right">
+            <div class="upper-navbar-left-link">
+              <a href="" class="link">My Wishlist</a>
+              <a href="" class="link" id="link1">Track-your-Order</a>
+            </div>
+            <div class="upper-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="middle-navbar">
+          <div class="topic">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8A2.37 2.37 0 0 1 8 7.083A2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0a.5.5 0 0 1 1 0a1.375 1.375 0 0 0 2.75 0a.5.5 0 0 1 1 0a1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0a.5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"
+              />
+            </svg>
+            <p>Capital <a>Shop</a></p>
+          </div>
+          <div class="navb">
+            <a href="" class="href">Home</a>
+            <a href="" class="href">Men</a>
+            <a href="" class="href">Women</a>
+            <a href="" class="href">Baby Collection</a>
+            <a href="" class="href">Pages </a>
+            <a href="" class="href">Blog</a>
+            <a href="" class="href">Contact</a>
+          </div>
+          <div class="symbol">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 256 256"
+            >
+              <path
+                fill="currentColor"
+                d="M227.46 214c-16.52-28.56-43-48.06-73.68-55.09a68 68 0 1 0-51.56 0c-30.64 7-57.16 26.53-73.68 55.09a4 4 0 0 0 6.92 4C55 184.19 89.62 164 128 164s73 20.19 92.54 54a4 4 0 0 0 3.46 2a3.93 3.93 0 0 0 2-.54a4 4 0 0 0 1.46-5.46ZM68 96a60 60 0 1 1 60 60a60.07 60.07 0 0 1-60-60Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 32 32"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              >
+                <path d="M6 6h24l-3 13H9m18 4H10L5 2H2" />
+                <circle cx="25" cy="27" r="2" />
+                <circle cx="12" cy="27" r="2" />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="lower-navbar">
+          <div class="lower-navbar-paragraph">
+            <p>Sale Up To 50% Biggest Discounts. Hurry! Limited Period Offer</p>
+            <a href="#" class="lower-navbar">Shop Now</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="body-part">
+        <div class="body-part-text">
+          <p class="fashion-sale">Fashion Sale</p>
+          <span>Minimal Menz Style</span>
+          <p class="body-part-text-lorem">
+            Lorem ipsum dolor sit amet Explicabo at quisques debitis cumqueiunt,
+            delectus maxime nulla modi labore facere voluptatibus, tempora,
+            quibusdam magnam.
+          </p>
+          <button class="shop-now">Shop Now</button>
+        </div>
+        <div class="body-part-image">
+          <img src="pexels-chloe-1043474-removebg-preview.png" alt="" />
+        </div>
+      </div>
+      
+      
+      
+      
+      <!-- Photo Hover and completion of first page -->
+
+
+
+
+      <div class="after-body">
+        <div
+          class="container"
+          onmouseenter="start('0')"
+          onmouseleave="stop('0')"
+        >
+          <img src="candle.webp" class="img12" />
+
+          <div class="text11" id="text11">
+            <p class="mens-fashion" id="mensfashion">Men's Fashion</p>
+            <a class="span-seemore" href="#" id="container0"> See More </a>
+          </div>
+        </div>
+        
+        <div
+        class="container"
+        onmouseenter="start('1')"
+        onmouseleave="stop('1')"
+      >
+        <img src="candle.webp" class="img12" />
+
+        <div class="text12" id="text12">
+          <p class="mens-fashion" id="mensfashion">Men's Fashion</p>
+          <a class="span-seemore" href="#" id="container1"> See More </a>
+        </div>
+      </div>
+      <div
+      class="container"
+      onmouseenter="start('2')"
+      onmouseleave="stop('2')"
+    >
+      <img src="candle.webp" class="img12" />
+
+      <div class="text13" id="text13">
+        <p class="mens-fashion" id="mensfashion">Men's Fashion</p>
+        <a class="span-seemore" href="#" id="container2"> See More </a>
+      </div>
+    </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="active-navbar">
+        <div class="trending-this-week">Trending This Week</div>
+        <div class="active-navbar-links">
+          <a href="# " class="links" id="nav0" onclick="Nav(0)">Men</a>
+          <a href="# " class="links" id="nav1" onclick="Nav(1)">Women</a>
+          <a href="# " class="links" id="nav2" onclick="Nav(2)">Baby</a>
+          <a href="# " class="links" id="nav3" onclick="Nav(3)">Fashion</a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div class="customer-testomonial">
+        <div class="h1-customer-testomonial">
+        <h1>Customer Testomonial</h1></div>
+        <div class="define">
+          <p>
+            Everybody is different, which is why we offer styles for every body.
+            Laborum fuga incidunt laboriosam voluptas iure, delectus dignissimos
+            facilis neque nulla earum.
+          </p>
+        </div>
+        <div class="photo-text">
+          <div class="customer-testomonial-photo">
+            <img src="candle.webp" />
+          </div>
+          <div class="customer-testomonial-text">
+            <div class="customer-testomonial-text-pratik">Pratik Pandey</div>
+            <span>Designer at Hubit</span>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="you-may-like">
+        <h1>You May Like</h1>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="you-may-like-photo">
+        <div class="photos">
+            <div class="first-photo-image"
+             onmouseenter="enters('0')"
+            onmouseleave="leaves('0')">
+              <img src="candle.webp" alt="" />
+            <div class="first-photo-image-symbol"
+             id="photos0">
+              <svg
+                class="svg1"
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607L1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2a1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2z"
+                />
+              </svg>
+              <svg
+                class="svg2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  fill="currentColor"
+                  d="M178 36c-21.44 0-39.92 10.19-50 27.07C117.92 46.19 99.44 36 78 36a58.07 58.07 0 0 0-58 58c0 28.59 18 58.47 53.4 88.79a333.81 333.81 0 0 0 52.7 36.73a4 4 0 0 0 3.8 0a333.81 333.81 0 0 0 52.7-36.73C218 152.47 236 122.59 236 94a58.07 58.07 0 0 0-58-58Zm-50 175.42C114 203.46 28 152.07 28 94a50.06 50.06 0 0 1 50-50c21.11 0 38.85 11.31 46.3 29.51a4 4 0 0 0 7.4 0C139.15 55.31 156.89 44 178 44a50.06 50.06 0 0 1 50 50c0 58-86 109.46-100 117.42Z"
+                />
+              </svg>
+              <svg
+                class="svg3"
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  d="m15.7 14.3l-4.2-4.2c-.2-.2-.5-.3-.8-.3c.8-1 1.3-2.4 1.3-3.8c0-3.3-2.7-6-6-6S0 2.7 0 6s2.7 6 6 6c1.4 0 2.8-.5 3.8-1.4c0 .3 0 .6.3.8l4.2 4.2c.2.2.5.3.7.3s.5-.1.7-.3c.4-.3.4-.9 0-1.3zM6 10.5c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5s4.5 2 4.5 4.5s-2 4.5-4.5 4.5z"
+                />
+                <path fill="currentColor" d="M7 3H5v2H3v2h2v2h2V7h2V5H7z" />
+              </svg>
+            </div>
+            <div class="first-photo-footer">
+              <a href="#" class="upper-text">Cashmere Tank + Bag</a>
+              <div class="lower-text">
+                <div class="lower-text-first">$98.00</div>
+                <div class="lower-text-second"><p>$1200</p></div>
+              </div>
+            </div>
+            </div>
+          
+        </div>
+        <div class="photos">
+          <div class="first-photo-image" 
+          onmouseenter="enters('1')"
+          onmouseleave="leaves('1')">
+            <img src="candle.webp" alt="" />
+          <div class="first-photo-image-symbol"
+          id="photos1" >
+            <svg
+              class="svg1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607L1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2a1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2z"
+              />
+            </svg>
+            <svg
+              class="svg2"
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 256 256"
+            >
+              <path
+                fill="currentColor"
+                d="M178 36c-21.44 0-39.92 10.19-50 27.07C117.92 46.19 99.44 36 78 36a58.07 58.07 0 0 0-58 58c0 28.59 18 58.47 53.4 88.79a333.81 333.81 0 0 0 52.7 36.73a4 4 0 0 0 3.8 0a333.81 333.81 0 0 0 52.7-36.73C218 152.47 236 122.59 236 94a58.07 58.07 0 0 0-58-58Zm-50 175.42C114 203.46 28 152.07 28 94a50.06 50.06 0 0 1 50-50c21.11 0 38.85 11.31 46.3 29.51a4 4 0 0 0 7.4 0C139.15 55.31 156.89 44 178 44a50.06 50.06 0 0 1 50 50c0 58-86 109.46-100 117.42Z"
+              />
+            </svg>
+            <svg
+              class="svg3"
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                d="m15.7 14.3l-4.2-4.2c-.2-.2-.5-.3-.8-.3c.8-1 1.3-2.4 1.3-3.8c0-3.3-2.7-6-6-6S0 2.7 0 6s2.7 6 6 6c1.4 0 2.8-.5 3.8-1.4c0 .3 0 .6.3.8l4.2 4.2c.2.2.5.3.7.3s.5-.1.7-.3c.4-.3.4-.9 0-1.3zM6 10.5c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5s4.5 2 4.5 4.5s-2 4.5-4.5 4.5z"
+              />
+              <path fill="currentColor" d="M7 3H5v2H3v2h2v2h2V7h2V5H7z" />
+            </svg>
+          </div>
+
+
+          <div class="first-photo-footer">
+            <a href="#" class="upper-text">Cashmere Tank + Bag</a>
+            <div class="lower-text">
+              <div class="lower-text-first">$98.00</div>
+              <div class="lower-text-second"><p>$1200</p></div>
+            </div>
+          </div>
+          </div>
+        
+      </div>
+      <div class="photos">
+        <div class="first-photo-image"
+         onmouseenter="enters('2')"
+        onmouseleave="leaves('2')">
+          <img src="candle.webp" alt="" />
+        <div class="first-photo-image-symbol" 
+        id="photos2">
+          <svg
+            class="svg1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill="currentColor"
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607L1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2a1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2z"
+            />
+          </svg>
+          <svg
+            class="svg2"
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            viewBox="0 0 256 256"
+          >
+            <path
+              fill="currentColor"
+              d="M178 36c-21.44 0-39.92 10.19-50 27.07C117.92 46.19 99.44 36 78 36a58.07 58.07 0 0 0-58 58c0 28.59 18 58.47 53.4 88.79a333.81 333.81 0 0 0 52.7 36.73a4 4 0 0 0 3.8 0a333.81 333.81 0 0 0 52.7-36.73C218 152.47 236 122.59 236 94a58.07 58.07 0 0 0-58-58Zm-50 175.42C114 203.46 28 152.07 28 94a50.06 50.06 0 0 1 50-50c21.11 0 38.85 11.31 46.3 29.51a4 4 0 0 0 7.4 0C139.15 55.31 156.89 44 178 44a50.06 50.06 0 0 1 50 50c0 58-86 109.46-100 117.42Z"
+            />
+          </svg>
+          <svg
+            class="svg3"
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill="currentColor"
+              d="m15.7 14.3l-4.2-4.2c-.2-.2-.5-.3-.8-.3c.8-1 1.3-2.4 1.3-3.8c0-3.3-2.7-6-6-6S0 2.7 0 6s2.7 6 6 6c1.4 0 2.8-.5 3.8-1.4c0 .3 0 .6.3.8l4.2 4.2c.2.2.5.3.7.3s.5-.1.7-.3c.4-.3.4-.9 0-1.3zM6 10.5c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5s4.5 2 4.5 4.5s-2 4.5-4.5 4.5z"
+            />
+            <path fill="currentColor" d="M7 3H5v2H3v2h2v2h2V7h2V5H7z" />
+          </svg>
+        </div>
+        <div class="first-photo-footer">
+          <a href="#" class="upper-text">Cashmere Tank + Bag</a>
+          <div class="lower-text">
+            <div class="lower-text-first">$98.00</div>
+            <div class="lower-text-second"><p>$1200</p></div>
+          </div>
+        </div>
+        </div>
+      
+    </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="whole3-latest-news-part">
+        <div class="latest-news">
+          <h1>Latest News</h1>
+        </div>
+        <div class="latest-news-part">
+          <div class="latest-news-part-photos" id="photos1">
+            <div class="latest-news-part-photos-first-image">
+              <img src="4.jpg" />
+            </div>
+
+            <div class="latest-news-part-photos-first-text">
+              <p class="latest-news-part-photos-first-text-fashion-tips">
+                Fashion Tips
+              </p>
+              <a href="#" class="latest-news-part-photos-first-text-a1"
+                >What Curling Irons Are The Best Ones</a
+              >
+              <p class="latest-news-part-photos-first-text-consectetur">
+                Consectetur adipisicing elit. Laborum fuga incidunt laboriosam
+                voluptas iure, delectus..
+              </p>
+              <a href="#" class="latest-news-part-photos-first-text-read-more"
+                >Read More</a
+              >
+            </div>
+          </div>
+
+            <div class="latest-news-part-photos" id="photos2">
+              <div class="latest-news-part-photos-first-image">
+                <img src="4.jpg" />
+              </div>
+              <div class="latest-news-part-photos-first-text">
+                <p class="latest-news-part-photos-first-text-fashion-tips">
+                  Fashion Tips
+                </p>
+                <a href="#" class="latest-news-part-photos-first-text-a2"
+                  >What Curling Irons Are The Best Ones</a
+                >
+                <p class="latest-news-part-photos-first-text-consectetur">
+                  Consectetur adipisicing elit. Laborum fuga incidunt laboriosam
+                  voluptas iure, delectus..
+                </p>
+                <a href="#" class="latest-news-part-photos-first-text-read-more"
+                  >Read More</a
+                >
+              </div>
+          </div>
+
+            <div class="latest-news-part-photos" id="photos3">
+              <div class="latest-news-part-photos-first-image">
+                <img src="4.jpg" />
+              </div>
+              <div class="latest-news-part-photos-first-text">
+                <p class="latest-news-part-photos-first-text-fashion-tips">
+                  Fashion Tips
+                </p>
+                <a href="#" class="latest-news-part-photos-first-text-a3"
+                  >What Curling Irons Are The Best Ones</a
+                >
+                <p class="latest-news-part-photos-first-text-consectetur">
+                  Consectetur adipisicing elit. Laborum fuga incidunt laboriosam
+                  voluptas iure, delectus..
+                </p>
+                <a href="#" class="latest-news-part-photos-first-text-read-more"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="after-latest-news">
+        <div class="col1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="94"
+            height="64"
+            viewBox="0 0 24 24"
+          >
+            <g fill="none">
+              <path
+                fill="currentColor"
+                d="M2 7v-.5a.5.5 0 0 0-.5.5H2Zm11 0h.5a.5.5 0 0 0-.5-.5V7Zm0 2v-.5a.5.5 0 0 0-.5.5h.5ZM2 7.5h11v-1H2v1ZM12.5 7v12h1V7h-1Zm-10 10V7h-1v10h1ZM13 9.5h5v-1h-5v1Zm8.5 3.5v4h1v-4h-1Zm-8 6V9h-1v10h1Zm5.56 1.06a1.5 1.5 0 0 1-2.12 0l-.708.708a2.5 2.5 0 0 0 3.536 0l-.707-.707Zm-2.12-2.12a1.5 1.5 0 0 1 2.12 0l.708-.708a2.5 2.5 0 0 0-3.536 0l.707.707Zm-9.88 2.12a1.5 1.5 0 0 1-2.12 0l-.708.708a2.5 2.5 0 0 0 3.536 0l-.707-.707Zm-2.12-2.12a1.5 1.5 0 0 1 2.12 0l.708-.708a2.5 2.5 0 0 0-3.536 0l.707.707Zm14.12 0c.294.292.44.675.44 1.06h1c0-.639-.244-1.28-.732-1.768l-.707.707ZM19.5 19c0 .385-.146.768-.44 1.06l.708.708A2.494 2.494 0 0 0 20.5 19h-1Zm-3.5-.5h-3v1h3v-1Zm.94 1.56A1.494 1.494 0 0 1 16.5 19h-1c0 .639.244 1.28.732 1.768l.707-.707ZM16.5 19c0-.385.146-.768.44-1.06l-.708-.708A2.494 2.494 0 0 0 15.5 19h1ZM4.94 20.06A1.494 1.494 0 0 1 4.5 19h-1c0 .639.244 1.28.732 1.768l.707-.707ZM4.5 19c0-.385.146-.768.44-1.06l-.708-.708A2.494 2.494 0 0 0 3.5 19h1Zm8.5-.5H8v1h5v-1Zm-5.94-.56c.294.292.44.675.44 1.06h1c0-.639-.244-1.28-.732-1.768l-.707.707ZM7.5 19c0 .385-.146.768-.44 1.06l.708.708A2.494 2.494 0 0 0 8.5 19h-1Zm14-2a1.5 1.5 0 0 1-1.5 1.5v1a2.5 2.5 0 0 0 2.5-2.5h-1ZM18 9.5a3.5 3.5 0 0 1 3.5 3.5h1A4.5 4.5 0 0 0 18 8.5v1ZM1.5 17A2.5 2.5 0 0 0 4 19.5v-1A1.5 1.5 0 0 1 2.5 17h-1Z"
+              />
+              <path
+                stroke="currentColor"
+                stroke-linejoin="round"
+                d="M3.5 4a1 1 0 0 1 1-1a3 3 0 0 1 3 3v1h-1a3 3 0 0 1-3-3Zm8 0a1 1 0 0 0-1-1a3 3 0 0 0-3 3v1h1a3 3 0 0 0 3-3Z"
+              />
+            </g>
+          </svg>
+          <h3>Fast & Free Delivery</h3>
+          <p>Free delivery on all orders</p>
+        </div>
+        <div class="col2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="94"
+            height="64"
+            viewBox="0 0 24 24"
+          >
+            <g fill="none">
+              <path
+                fill="currentColor"
+                d="M2 7v-.5a.5.5 0 0 0-.5.5H2Zm11 0h.5a.5.5 0 0 0-.5-.5V7Zm0 2v-.5a.5.5 0 0 0-.5.5h.5ZM2 7.5h11v-1H2v1ZM12.5 7v12h1V7h-1Zm-10 10V7h-1v10h1ZM13 9.5h5v-1h-5v1Zm8.5 3.5v4h1v-4h-1Zm-8 6V9h-1v10h1Zm5.56 1.06a1.5 1.5 0 0 1-2.12 0l-.708.708a2.5 2.5 0 0 0 3.536 0l-.707-.707Zm-2.12-2.12a1.5 1.5 0 0 1 2.12 0l.708-.708a2.5 2.5 0 0 0-3.536 0l.707.707Zm-9.88 2.12a1.5 1.5 0 0 1-2.12 0l-.708.708a2.5 2.5 0 0 0 3.536 0l-.707-.707Zm-2.12-2.12a1.5 1.5 0 0 1 2.12 0l.708-.708a2.5 2.5 0 0 0-3.536 0l.707.707Zm14.12 0c.294.292.44.675.44 1.06h1c0-.639-.244-1.28-.732-1.768l-.707.707ZM19.5 19c0 .385-.146.768-.44 1.06l.708.708A2.494 2.494 0 0 0 20.5 19h-1Zm-3.5-.5h-3v1h3v-1Zm.94 1.56A1.494 1.494 0 0 1 16.5 19h-1c0 .639.244 1.28.732 1.768l.707-.707ZM16.5 19c0-.385.146-.768.44-1.06l-.708-.708A2.494 2.494 0 0 0 15.5 19h1ZM4.94 20.06A1.494 1.494 0 0 1 4.5 19h-1c0 .639.244 1.28.732 1.768l.707-.707ZM4.5 19c0-.385.146-.768.44-1.06l-.708-.708A2.494 2.494 0 0 0 3.5 19h1Zm8.5-.5H8v1h5v-1Zm-5.94-.56c.294.292.44.675.44 1.06h1c0-.639-.244-1.28-.732-1.768l-.707.707ZM7.5 19c0 .385-.146.768-.44 1.06l.708.708A2.494 2.494 0 0 0 8.5 19h-1Zm14-2a1.5 1.5 0 0 1-1.5 1.5v1a2.5 2.5 0 0 0 2.5-2.5h-1ZM18 9.5a3.5 3.5 0 0 1 3.5 3.5h1A4.5 4.5 0 0 0 18 8.5v1ZM1.5 17A2.5 2.5 0 0 0 4 19.5v-1A1.5 1.5 0 0 1 2.5 17h-1Z"
+              />
+              <path
+                stroke="currentColor"
+                stroke-linejoin="round"
+                d="M3.5 4a1 1 0 0 1 1-1a3 3 0 0 1 3 3v1h-1a3 3 0 0 1-3-3Zm8 0a1 1 0 0 0-1-1a3 3 0 0 0-3 3v1h1a3 3 0 0 0 3-3Z"
+              />
+            </g>
+          </svg>
+          <h3>Secure Payment</h3>
+          <p>Free delivery on all orders</p>
+        </div>
+        <div class="col3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="94"
+            height="64"
+            viewBox="0 0 24 24"
+          >
+            <g fill="none">
+              <path
+                fill="currentColor"
+                d="M2 7v-.5a.5.5 0 0 0-.5.5H2Zm11 0h.5a.5.5 0 0 0-.5-.5V7Zm0 2v-.5a.5.5 0 0 0-.5.5h.5ZM2 7.5h11v-1H2v1ZM12.5 7v12h1V7h-1Zm-10 10V7h-1v10h1ZM13 9.5h5v-1h-5v1Zm8.5 3.5v4h1v-4h-1Zm-8 6V9h-1v10h1Zm5.56 1.06a1.5 1.5 0 0 1-2.12 0l-.708.708a2.5 2.5 0 0 0 3.536 0l-.707-.707Zm-2.12-2.12a1.5 1.5 0 0 1 2.12 0l.708-.708a2.5 2.5 0 0 0-3.536 0l.707.707Zm-9.88 2.12a1.5 1.5 0 0 1-2.12 0l-.708.708a2.5 2.5 0 0 0 3.536 0l-.707-.707Zm-2.12-2.12a1.5 1.5 0 0 1 2.12 0l.708-.708a2.5 2.5 0 0 0-3.536 0l.707.707Zm14.12 0c.294.292.44.675.44 1.06h1c0-.639-.244-1.28-.732-1.768l-.707.707ZM19.5 19c0 .385-.146.768-.44 1.06l.708.708A2.494 2.494 0 0 0 20.5 19h-1Zm-3.5-.5h-3v1h3v-1Zm.94 1.56A1.494 1.494 0 0 1 16.5 19h-1c0 .639.244 1.28.732 1.768l.707-.707ZM16.5 19c0-.385.146-.768.44-1.06l-.708-.708A2.494 2.494 0 0 0 15.5 19h1ZM4.94 20.06A1.494 1.494 0 0 1 4.5 19h-1c0 .639.244 1.28.732 1.768l.707-.707ZM4.5 19c0-.385.146-.768.44-1.06l-.708-.708A2.494 2.494 0 0 0 3.5 19h1Zm8.5-.5H8v1h5v-1Zm-5.94-.56c.294.292.44.675.44 1.06h1c0-.639-.244-1.28-.732-1.768l-.707.707ZM7.5 19c0 .385-.146.768-.44 1.06l.708.708A2.494 2.494 0 0 0 8.5 19h-1Zm14-2a1.5 1.5 0 0 1-1.5 1.5v1a2.5 2.5 0 0 0 2.5-2.5h-1ZM18 9.5a3.5 3.5 0 0 1 3.5 3.5h1A4.5 4.5 0 0 0 18 8.5v1ZM1.5 17A2.5 2.5 0 0 0 4 19.5v-1A1.5 1.5 0 0 1 2.5 17h-1Z"
+              />
+              <path
+                stroke="currentColor"
+                stroke-linejoin="round"
+                d="M3.5 4a1 1 0 0 1 1-1a3 3 0 0 1 3 3v1h-1a3 3 0 0 1-3-3Zm8 0a1 1 0 0 0-1-1a3 3 0 0 0-3 3v1h1a3 3 0 0 0 3-3Z"
+              />
+            </g>
+          </svg>
+          <h3>Money Back Guarantee</h3>
+          <p>Free delivery on all orders</p>
+        </div>
+        <div class="col4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="94"
+            height="64"
+            viewBox="0 0 24 24"
+          >
+            <g fill="none">
+              <path
+                fill="currentColor"
+                d="M2 7v-.5a.5.5 0 0 0-.5.5H2Zm11 0h.5a.5.5 0 0 0-.5-.5V7Zm0 2v-.5a.5.5 0 0 0-.5.5h.5ZM2 7.5h11v-1H2v1ZM12.5 7v12h1V7h-1Zm-10 10V7h-1v10h1ZM13 9.5h5v-1h-5v1Zm8.5 3.5v4h1v-4h-1Zm-8 6V9h-1v10h1Zm5.56 1.06a1.5 1.5 0 0 1-2.12 0l-.708.708a2.5 2.5 0 0 0 3.536 0l-.707-.707Zm-2.12-2.12a1.5 1.5 0 0 1 2.12 0l.708-.708a2.5 2.5 0 0 0-3.536 0l.707.707Zm-9.88 2.12a1.5 1.5 0 0 1-2.12 0l-.708.708a2.5 2.5 0 0 0 3.536 0l-.707-.707Zm-2.12-2.12a1.5 1.5 0 0 1 2.12 0l.708-.708a2.5 2.5 0 0 0-3.536 0l.707.707Zm14.12 0c.294.292.44.675.44 1.06h1c0-.639-.244-1.28-.732-1.768l-.707.707ZM19.5 19c0 .385-.146.768-.44 1.06l.708.708A2.494 2.494 0 0 0 20.5 19h-1Zm-3.5-.5h-3v1h3v-1Zm.94 1.56A1.494 1.494 0 0 1 16.5 19h-1c0 .639.244 1.28.732 1.768l.707-.707ZM16.5 19c0-.385.146-.768.44-1.06l-.708-.708A2.494 2.494 0 0 0 15.5 19h1ZM4.94 20.06A1.494 1.494 0 0 1 4.5 19h-1c0 .639.244 1.28.732 1.768l.707-.707ZM4.5 19c0-.385.146-.768.44-1.06l-.708-.708A2.494 2.494 0 0 0 3.5 19h1Zm8.5-.5H8v1h5v-1Zm-5.94-.56c.294.292.44.675.44 1.06h1c0-.639-.244-1.28-.732-1.768l-.707.707ZM7.5 19c0 .385-.146.768-.44 1.06l.708.708A2.494 2.494 0 0 0 8.5 19h-1Zm14-2a1.5 1.5 0 0 1-1.5 1.5v1a2.5 2.5 0 0 0 2.5-2.5h-1ZM18 9.5a3.5 3.5 0 0 1 3.5 3.5h1A4.5 4.5 0 0 0 18 8.5v1ZM1.5 17A2.5 2.5 0 0 0 4 19.5v-1A1.5 1.5 0 0 1 2.5 17h-1Z"
+              />
+              <path
+                stroke="currentColor"
+                stroke-linejoin="round"
+                d="M3.5 4a1 1 0 0 1 1-1a3 3 0 0 1 3 3v1h-1a3 3 0 0 1-3-3Zm8 0a1 1 0 0 0-1-1a3 3 0 0 0-3 3v1h1a3 3 0 0 0 3-3Z"
+              />
+            </g>
+          </svg>
+          <h3>Online Support</h3>
+          <p>Free delivery on all orders</p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <footer class="footer">
+        <div class="upper-footer">
+          <div class="suscriber">
+            <h2>Subscribe Newsletter</h2>
+            <p>Subscribe newsletter to get 5% on all products.</p>
+          </div>
+          <div class="enter-your-email">
+            <input type="email" placeholder="Enter Your Email" />
+            <button>Subscribe</button>
+          </div>
+          <div class="social-media-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="m10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73Z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="middle-footer">
+          <div class="middle-footer-logo">
+            <p>Capital <a>Shop</a></p>
+          </div>
+
+          <div class="middle-footer-shop-men">
+            <div class="shopmen">
+              <p>Shop Men</p>
+            </div>
+            <div class="middle-footer-shop-men-links">
+              <a href="">Clothing Fashion</a>
+              <a href="">Winter</a>
+              <a href="">Summer</a>
+              <a href="">Formal</a>
+              <a href="">Casual</a>
+            </div>
+          </div>
+
+          <div class="middle-footer-shop-women">
+            <div class="shopmen">
+              <p>Shop Women</p>
+            </div>
+            <div class="middle-footer-shop-women-links">
+              <a href="">Clothing Fashion</a>
+              <a href="">Winter</a>
+              <a href="">Summer</a>
+              <a href="">Formal</a>
+              <a href="">Casual</a>
+            </div>
+          </div>
+
+          <div class="middle-footer-baby-collection">
+            <div class="shopmen">
+              <p>Baby Collection</p>
+            </div>
+            <div class="middle-footer-baby-collection-links">
+              <a href="">Clothing Fashion</a>
+              <a href="">Winter</a>
+              <a href="">Summer</a>
+              <a href="">Formal</a>
+              <a href="">Casual</a>
+            </div>
+          </div>
+
+          <div class="middle-footer-quick">
+            <div class="shopmen">
+              <p>Quick Links</p>
+            </div>
+            <div class="middle-footer-quick-links">
+              <a href="">Track Your Order</a>
+              <a href="">Support</a>
+              <a href="">FAQ</a>
+              <a href="">Carrier</a>
+              <a href="">About</a>
+              <a href="">Contact us</a>
+            </div>
+          </div>
+        </div>
+        <div class="lower-footer">
+          <div class="description">
+            <p>
+              Copyright ©2023 All rights reserved | This template is made with
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z"
+              />
+            </svg>
+            <span> by</span> <a href="#">Pratik Pandey</a>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
